@@ -1,0 +1,7 @@
+{
+  "provider": "ws://127.0.0.1:7545",
+  "contract_address": "0x49273Fe2f5E5C63F9949598025006508feC2985A",
+  "account": "0x003C0C44B71aBA9814C358B187E88f6D581e5767",
+  "private_key": "0e4a6eea0fe94de0ccf6188c45665397cf02a7026aad00df10a2ede4c1b6e60b",
+  "build_file": "example/Election.json"
+}
