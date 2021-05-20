@@ -7,7 +7,7 @@ module.exports = function (deployer, network, accounts) {
     Math.floor(Date.now() / 1000) + 60 * 60 * 24 * 256,
     2,
     ["Saya", "Kamu", "Dia"],
-    [accounts[1], accounts[2], accounts[3]],
+    [accounts[1], accounts[2]],
     0
   );
 };

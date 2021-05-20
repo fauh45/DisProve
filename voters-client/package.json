@@ -4,15 +4,24 @@
   "description": "DisProve Voters Client",
   "main": "index.js",
   "scripts": {
+    "start": "ts-node bin/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "fauh45",
   "license": "MIT",
   "dependencies": {
-    "ts-node": "^9.1.1",
-    "tslint": "^6.1.3",
-    "typescript": "^4.2.4",
+    "chalk": "^4.1.1",
+    "clear": "^0.1.0",
+    "ora": "^5.4.0",
+    "prompts": "^2.4.1",
     "web3": "^1.3.6",
     "yargs": "^17.0.1"
+  },
+  "devDependencies": {
+    "@types/clear": "^0.1.1",
+    "@types/prompts": "^2.0.12",
+    "ts-node": "^9.1.1",
+    "tslint": "^6.1.3",
+    "typescript": "^4.2.4"
   }
 }

@@ -58,9 +58,15 @@ const start_listening = async (
           .value();
 
         console.log(query_result);
-        const valid =
-          query_result.voter_address === event.returnValues._voter_address &&
-          query_result.voters_id === event.returnValues._voters_id;
+        let valid: boolean;
+
+        try {
+          valid =
+            query_result.voter_address === event.returnValues._voter_address &&
+            query_result.voters_id === event.returnValues._voters_id;
+        } catch (error) {
+          valid = false;
+        }
 
         try {
           console.log(`Validation result: ${valid ? "Valid" : "Not Valid"}`);
