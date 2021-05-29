@@ -172,14 +172,16 @@ class Client {
 
     try {
       const get_vote_reply = await this.Election.methods
-        .get_my_vote("gnf9LQqtoN+zif1hH5L+Fw==")
+        .get_my_vote(this.voter_hash)
         .call({ gas: 200000 });
 
-      console.log(
-        "Network response : \n" + JSON.stringify(get_vote_reply, null, 2)
-      );
-
       this.spinner.succeed("Done revalidating");
+      console.log(
+        "\nValidated : " +
+          `${get_vote_reply.validated ? chalk.green("yes") : chalk.red("no")}` +
+          "\nVoted for candidate number : " +
+          chalk.cyan(get_vote_reply.vote_for)
+      );
     } catch (error) {
       this.spinner.fail(error.message);
     }

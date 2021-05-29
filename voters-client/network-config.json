@@ -1,6 +1,6 @@
 {
   "provider": "ws://127.0.0.1:7545",
-  "contract_address": "0x273eAef9D20b52619c72Ded7e40cC3EaEca39628",
+  "contract_address": "0xd9B3d16FE019364850731E2C43188085426aCE5c",
   "build_file": "./Election.json",
   "candidate_count": 4
 }

@@ -125,7 +125,7 @@ contract Election {
     ) private view returns (uint256) {
         uint256 count = 0;
         for (uint256 i = 0; i < oracles.length; i++) {
-            if (validator_list[oracles[i]]) {
+            if (validator_list[oracles[i]] == true) {
                 count += 1;
             }
         }
